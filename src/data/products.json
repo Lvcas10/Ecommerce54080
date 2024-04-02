@@ -1,0 +1,50 @@
+[
+{
+    "id": 1,
+    "title": "Parlante Kassel",
+    "description": "PS082 Bluetooh",
+    "category": "Perisfericos",
+    "price": 110,
+    "pictureUrl": "https://plazavea.vteximg.com.br/arquivos/ids/9395329-512-512/imageUrl_1.jpg"
+},
+{
+    "id": 2,
+    "title": "Teclado Gamer",
+    "description": "Redragon K530W-RGB-PRO",
+    "category": "Perisfericos",
+    "price": 85,
+    "pictureUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSJlINt1t-OzEhgBrEiOKWyUuJZNX1jYjW3xawLRA9LTrMwtn4neAB5ogANx5R4epJ8TXJLzqLcOC0YtAqIjKasUxHfxlPvaMfRFnPKaNw4omHjczVCJBTX&usqp=CAE"
+},
+{
+    "id": 3,
+    "title": "Disco Solido Kingston",
+    "description": "240Gb Kingston A400",
+    "category": "Componentes",
+    "price": 180,
+    "pictureUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTFHJS6ApHqrAL2u4ui5gSIGrVLpWW0yYWx61N1qlGaiyoQdlvcqMNu_M-4kmvsoXgnRcwLc3nKeV3qBkjP94zzguFpqkebK5i4tyPQ7jA_gNpIWLCJadoo&usqp=CAE"
+},
+{
+    "id": 4,
+    "title": "Placa de Video",
+    "description": "RTX 4090 24Gb Msi Suprim X",
+    "category": "Componentes",
+    "price": 270,
+    "pictureUrl": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTcnt9is7piZSzZ1vOwDH8sFBSBjk08ZTNGlElAGZT8b9toTFaGxML-WQjqf5wmarm4tW1sw7T3Gt4W9pewQkVbVp7GeEepwLX2BGPEJk6iO6R2uWuszNOz&usqp=CAE"
+},
+{
+    "id": 5,
+    "title": "Notebook Samsung",
+    "description": "Pro Core i5 512Gb 16Gb",
+    "category": "Computacion",
+    "price": 650,
+    "pictureUrl": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTlQrAubkAdWyOAYgJts5cmITztJ6IlTBvqF5b8kAFlMDTjNVVnSJY1H4khutdtRguH8qejX3HvzmTenWXWVpvylyQyjYiq&usqp=CAE"
+},
+{
+    "id": 6,
+    "title": "Notebook Dell",
+    "description": "Pro i7 32Gb Ssd 512Gb 4Gb 16",
+    "category": "Computacion",
+    "price": 750,
+    "pictureUrl": "https://images.fravega.com/f500/563ae60e5bd6f512163d9a298ba2b3d2.jpg"
+}
+]
