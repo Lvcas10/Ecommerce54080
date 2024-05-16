@@ -38,7 +38,7 @@ export const ItemListContainer = () => {
         );
     });
 }, [id]);
-    return <Container className='mt-4'>
+    return <Container className='mt-4 mb-3'>
         <ItemList products={products}/>
     </Container>;
 };

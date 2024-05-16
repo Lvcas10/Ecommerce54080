@@ -17,11 +17,35 @@ export const ItemCount = ({onAdd, quantity}) => {
     };
 
     return (
-        <div className="d-flex">
-        <div onClick={handleDecrease}>-</div>
-        <input type="number" value={count} readOnly/>
-        <div onClick={handleIncrease}>+</div>
-        <button type="button" onClick={handleAdd}>Agregar al Carrito</button>
+        <div className="d-flex align-items-center justify-content-center mt-3">
+            <div 
+                onClick={handleDecrease} 
+                className="btn btn-outline-secondary px-3"
+                style={{ cursor: 'pointer' }}
+            >
+                -
+            </div>
+            <input 
+                type="number" 
+                value={count} 
+                readOnly 
+                className="form-control text-center mx-2" 
+                style={{ width: '4rem' }} 
+            />
+            <div 
+                onClick={handleIncrease} 
+                className="btn btn-outline-secondary px-3" 
+                style={{ cursor: 'pointer' }}
+            >
+                +
+            </div>
+            <button 
+                type="button" 
+                onClick={handleAdd} 
+                className="btn btn-primary ml-3"
+            >
+                Agregar al Carrito
+            </button>
         </div>
     );
 };

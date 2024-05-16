@@ -52,29 +52,41 @@ export const Cart = () => {
     const handleClear = () => clear();
 
     return (
-    <Container className="mt-4">
-        <h1>Productos</h1>
-        {items.map((i) => {
-            return (
-            <ul key={i.title}>
-                <li>Producto {i.title}</li>
-                <li>Cant: {i.quantity}</li>
-                <li>$ {i.price}</li>
-                <li onClick={() => handleRemove(i.id)}>X</li>
+        <Container className="mt-4 p-4 shadow-lg rounded" style={{ width: '20rem', backgroundColor: "#f8f9fa" }}>
+        <h1 className="text-center mb-4 text-primary">Productos</h1>
+        {items.map((i) => (
+            <ul key={i.title} className="list-group mb-3">
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                    Producto: {i.title}
+                    </li>
+                    <li className="list-group-item d-flex justify-content-between align-items-center">Cant: {i.quantity}</li>
+                <li className="list-group-item d-flex justify-content-between align-items-center">
+                    Precio: ${i.price}
+                    <button className="btn btn-danger btn-sm" onClick={() => handleRemove(i.id)}>X</button>
+                </li>
             </ul>
-        );
-        })}
-        <div>Total: {total()}</div>
-        <button onClick={handleClear}>Limpiar</button>
-        {items?.length > 0 && <form>
-            <label>Nombre</label>
-            <input type="text" value={values.name} name="name" onChange={handleChange}/>
-            <label>Email</label>
-            <input type="email" value={values.email} name="email" onChange={handleChange}/>
-            <label>Telefono</label>
-            <input type="number" value={values.phone} name="phone" onChange={handleChange}/>
-            <button type="button" onClick={handleSubmit}>Enviar</button>
-        </form> }
+        ))}
+        <div className="mb-3">
+            <strong>Total:</strong> ${total()}
+        </div>
+        <button className="btn btn-warning btn-block mb-3" onClick={handleClear}>Limpiar</button>
+        {items?.length > 0 && (
+            <form>
+                <div className="form-group">
+                    <label>Nombre</label>
+                    <input type="text" className="form-control" value={values.name} name="name" onChange={handleChange} />
+                </div>
+                <div className="form-group">
+                    <label>Email</label>
+                    <input type="email" className="form-control" value={values.email} name="email" onChange={handleChange} />
+                </div>
+                <div className="form-group">
+                    <label>Teléfono</label>
+                    <input type="number" className="form-control" value={values.phone} name="phone" onChange={handleChange} />
+                </div>
+                <button type="button" className="btn btn-success btn-block" onClick={handleSubmit}>Enviar</button>
+            </form>
+        )}
     </Container>
 );
 }
