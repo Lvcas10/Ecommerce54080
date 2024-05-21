@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const ItemCount = ({onAdd, quantity}) => {
     const [count, setCount] = useState(1);
@@ -14,6 +16,16 @@ export const ItemCount = ({onAdd, quantity}) => {
     const handleAdd = () => {
         onAdd(count);
         setCount(1);
+        toast.success(`Se han agregado ${count} producto(s) al carrito`, {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
     };
 
     return (
@@ -46,6 +58,7 @@ export const ItemCount = ({onAdd, quantity}) => {
             >
                 Agregar al Carrito
             </button>
+            <ToastContainer />
         </div>
     );
 };

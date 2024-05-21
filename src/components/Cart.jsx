@@ -1,7 +1,9 @@
 import { Container } from "react-bootstrap"
 import { useContext, useState } from "react"
 import { CartContext } from "../contexts/CartContext"
+import { ToastContainer, toast } from 'react-toastify';
 import { addDoc, getFirestore, collection } from "firebase/firestore"
+import 'react-toastify/dist/ReactToastify.css';
 
 const initialValues = {
     name: "",
@@ -40,7 +42,16 @@ export const Cart = () => {
 
         addDoc (orderCollection, order).then (({id}) =>{
             if (id) {
-                alert("Su Orden:" + id + "ha sido completada!");
+                toast.success("Su Orden: " + id + " ha sido completada!", {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                });
             }
         }) 
         .finally(() => {clear();
@@ -87,6 +98,7 @@ export const Cart = () => {
                 <button type="button" className="btn btn-success btn-block" onClick={handleSubmit}>Enviar</button>
             </form>
         )}
+        <ToastContainer />
     </Container>
 );
 }

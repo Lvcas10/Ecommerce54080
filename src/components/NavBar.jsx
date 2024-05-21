@@ -8,7 +8,7 @@ import { CartWidget } from "./CartWidget";
 export const NavBar = () => {
     return (
         <>
-        <Navbar bg="transparent" data-bs-theme="dark" className='textt'>
+        <Navbar bg="dark" data-bs-theme="dark" className='textt sticky-top shadow-lg'>
             <Container>
                 <Navbar.Brand to="/" as={NavLink}>Digital Hub</Navbar.Brand>
                     <Nav className="me-auto">

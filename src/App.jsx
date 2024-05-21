@@ -2,6 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import './App.css'
+import { ToastContainer} from 'react-toastify';
+
 import { NavBar } from './components/NavBar';
 import { ItemListContainer } from './components/ItemListContainer';
 import { ItemDetailContainer } from './components/ItemDetailContainer';
@@ -20,6 +22,7 @@ function App() {
           <Route path='/cart' element={<Cart/>}/>
         </Routes>
       </BrowserRouter>
+      <ToastContainer />
     </Provider>
   );
 };
